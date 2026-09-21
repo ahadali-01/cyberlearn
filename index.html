@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Cybersecurity Learning Platform — beginner-friendly Roman English cybersecurity education." />
+<title>CyberLearn — Cybersecurity Learning Platform</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar" role="banner">
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="brand">
+    <span class="brand-icon" aria-hidden="true">🛡️</span>
+    <span class="brand-text">Cyber<span>Learn</span></span>
+  </div>
+  <div class="topbar-search">
+    <input type="search" id="globalSearch" placeholder="Search chapters, terms, concepts..." aria-label="Global search" />
+    <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
+  </div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+</header>
+
+<!-- ============ SIDEBAR ============ -->
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Main navigation">
+  <nav>
+    <h3>Overview</h3>
+    <a href="#home" class="nav-link active">🏠 Home</a>
+    <a href="#intro" class="nav-link">📘 Introduction</a>
+    <a href="#roadmap" class="nav-link">🗺️ Learning Roadmap</a>
+    <a href="#key-concepts" class="nav-link">💡 Key Concepts</a>
+
+    <h3>Chapters</h3>
+    <a href="#ch1" class="nav-link">1. Cybersecurity &amp; Its Origins</a>
+    <a href="#ch2" class="nav-link">2. About Cybersecurity Case Studies</a>
+    <a href="#ch3" class="nav-link">3. Case Study: Target 2013</a>
+    <a href="#ch4" class="nav-link">4. Disciplines Within Cybersecurity</a>
+    <a href="#ch5" class="nav-link">5. Insider Threat: Snowden 2013</a>
+    <a href="#ch6" class="nav-link">6. Basic Cybersecurity Concepts</a>
+    <a href="#ch7" class="nav-link">7. Human Factors</a>
+    <a href="#ch8" class="nav-link">8. Technical Cybersecurity</a>
+    <a href="#ch9" class="nav-link">9. Evolving Attack &amp; Defense</a>
+    <a href="#ch10" class="nav-link">10. Case Study: Sony 2014</a>
+    <a href="#ch11" class="nav-link">11. The Cybersecurity Cold War</a>
+    <a href="#ch12" class="nav-link">12. Risk-Based Cybersecurity</a>
+    <a href="#ch13" class="nav-link">13. How Cyber Exposed Are You?</a>
+    <a href="#ch14" class="nav-link">14. When Things Go Wrong</a>
+    <a href="#ch15" class="nav-link">15. A Glimpse Toward the Future</a>
+    <a href="#ch16" class="nav-link">16. Bringing It All Together</a>
+
+    <h3>Tools</h3>
+    <a href="#dictionary" class="nav-link">📖 Cybersecurity Dictionary</a>
+    <a href="#checklist" class="nav-link">✅ Security Checklist</a>
+    <a href="#quiz" class="nav-link">🧠 Quizzes</a>
+    <a href="#bookmarks" class="nav-link">🔖 Saved Concepts</a>
+    <a href="#notes" class="nav-link">📝 My Notes</a>
+    <a href="#about" class="nav-link">ℹ️ About the Course</a>
+  </nav>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main class="content" id="content">
+
+<!-- ============ HOME / HERO ============ -->
+<section id="home" class="section hero-section">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="badge">Beginner Friendly • Roman English</span>
+      <h1>Cybersecurity Learning Platform</h1>
+      <p class="hero-sub">Zero se hero tak — asaan Roman English mein cybersecurity seekhein.</p>
+      <p class="hero-desc">
+        Ye platform aapko cybersecurity ki basic se le kar advanced defensive concepts tak le jata hai.
+        Har chapter asaan Roman English mein likha gaya hai, real examples ke saath, taake aap
+        beginner se confident learner ban sakein.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn primary" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">Start Learning</button>
+        <button class="btn ghost" onclick="document.getElementById('roadmap').scrollIntoView({behavior:'smooth'})">Learning Roadmap</button>
+        <button class="btn ghost" onclick="document.getElementById('dictionary').scrollIntoView({behavior:'smooth'})">Dictionary</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card"><span class="stat-num">16</span><span class="stat-label">Chapters</span></div>
+      <div class="stat-card"><span class="stat-num">40+</span><span class="stat-label">Dictionary Terms</span></div>
+      <div class="stat-card"><span class="stat-num">5</span><span class="stat-label">Interactive Tools</span></div>
+      <div class="stat-card"><span class="stat-num">8</span><span class="stat-label">Quiz Sets</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTRODUCTION ============ -->
+<section id="intro" class="section">
+  <h2>📘 Introduction</h2>
+  <p>Cybersecurity aaj ke digital daur mein har insaan ke liye zaroori hai. Chahe aap student hon, employee hon, ya business owner — aapka data, aapki pehchaan aur aapki privacy sab kuch online hai.</p>
+  <p>Is course mein hum bilkul zero se shuru karenge. Pehle samjhenge ke cybersecurity hoti kya hai, phir dekhenge ke attackers kaise kaam karte hain, aur akhir mein seekhenge ke hum khud ko kaise protect kar sakte hain.</p>
+
+  <h3>Ye Course Kis Ke Liye Hai?</h3>
+  <ul class="clean-list">
+    <li>Bilkul beginners jo cybersecurity field mein naye hain</li>
+    <li>Students jo IT ya CS padh rahe hain</li>
+    <li>Professionals jo apni security awareness improve karna chahte hain</li>
+    <li>Koi bhi jo apni digital life ko secure rakhna chahta hai</li>
+  </ul>
+
+  <h3>Aap Kya Seekhenge?</h3>
+  <ul class="clean-list">
+    <li>Cybersecurity ki basics aur uski history</li>
+    <li>Different types of threats, vulnerabilities aur attacks</li>
+    <li>Defensive techniques jo aap apni life mein use kar sakte hain</li>
+    <li>Risk ko kaise samjhein aur manage karein</li>
+    <li>Incident ke waqt kya karna chahiye</li>
+    <li>Future cybersecurity trends</li>
+  </ul>
+
+  <div class="callout">
+    <strong>💡 Yaad Rakhein:</strong> Cybersecurity sirf technology ka masla nahi hai. Insaan, process, aur technology — teenon ka mil kar secure system banate hain.
+  </div>
+</section>
+
+<!-- ============ LEARNING ROADMAP ============ -->
+<section id="roadmap" class="section">
+  <h2>🗺️ Cybersecurity Beginner Roadmap</h2>
+  <p>Ye roadmap aapko step-by-step batata hai ke kis order mein cybersecurity seekhni chahiye. Ye educational organization hai jo beginners ke liye design ki gayi hai.</p>
+
+  <div class="roadmap">
+    <div class="roadmap-step" data-step="1">
+      <div class="roadmap-num">1</div>
+      <div class="roadmap-content"><h4>Foundation</h4><p>Cybersecurity kya hai, digital devices, internet basics.</p></div>
+    </div>
+    <div class="roadmap-step" data-step="2">
+      <div class="roadmap-num">2</div>
+      <div class="roadmap-content"><h4>Core Concepts</h4><p>Identify, Protect, Detect, Respond, Recover, Defense in Depth.</p></div>
+    </div>
+    <div class="roadmap-step" data-step="3">
+      <div class="roadmap-num">3</div>
+      <div class="roadmap-content"><h4>Human Factors</h4><p>Human error, social engineering, security awareness.</p></div>
+    </div>
+    <div class="roadmap-step" data-step="4">
+      <div class="roadmap-num">4</div>
+      <div class="roadmap-content"><h4>Technical Security</h4><p>Access control, firewalls, encryption, patching, monitoring.</p></div>
+    </div>
+    <div class="roadmap-step" data-step="5">
+      <div class="roadmap-num">5</div>
+      <div class="roadmap-content"><h4>Threats &amp; Attacks</h4><p>Malware, attack vectors, threat actors, evolution.</p></div>
+    </div>
+    <div class="roadmap-step" data-step="6">
+      <div class="roadmap-num">6</div>
+      <div class="roadmap-content"><h4>Risk Management</h4><p>Risk, threat, vulnerability, stacked risk, controls.</p></div>
+    </div>
+    <div class="roadmap-step" data-step="7">
+      <div class="roadmap-num">7</div>
+      <div class="roadmap-content"><h4>Incident Response</h4><p>Detect, assess, contain, investigate, recover.</p></div>
+    </div>
+    <div class="roadmap-step" data-step="8">
+      <div class="roadmap-num">8</div>
+      <div class="roadmap-content"><h4>Continuous Improvement</h4><p>Learn from incidents, patch, refine, repeat.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY CONCEPTS ============ -->
+<section id="key-concepts" class="section">
+  <h2>💡 Key Concepts Dashboard</h2>
+  <p>Ye woh core concepts hain jo poori cybersecurity ki bunyaad hain. Har card mein term, asaan matlab aur ye ke kyun important hai.</p>
+
+  <div class="grid grid-3">
+    <div class="concept-card">
+      <h4>Cybersecurity</h4>
+      <p class="concept-meaning">Digital systems, devices aur information ko unauthorized access, damage aur misuse se protect karna.</p>
+      <p class="concept-why"><strong>Why:</strong> Aapki digital life isi ke through safe rehti hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Risk</h4>
+      <p class="concept-meaning">Kisi nuqsan ke hone ka chance aur uska impact.</p>
+      <p class="concept-why"><strong>Why:</strong> Risk samajhna hi defensive decisions ki bunyaad hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Threat</h4>
+      <p class="concept-meaning">Koi bhi cheez jo aapke system ya data ko nuqsan pohncha sakti hai.</p>
+      <p class="concept-why"><strong>Why:</strong> Threat ko pehchan kar hi defend kar sakte hain.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Vulnerability</h4>
+      <p class="concept-meaning">System mein aik kamzori jo attacker use kar sakta hai.</p>
+      <p class="concept-why"><strong>Why:</strong> Vulnerability patch karna sabse basic defense hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Attack Vector</h4>
+      <p class="concept-meaning">Wo rasta ya method jisse attacker system tak pohnchta hai.</p>
+      <p class="concept-why"><strong>Why:</strong> Vector block karne se attack ruk jata hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Control</h4>
+      <p class="concept-meaning">Koi bhi safeguard jo risk ko kam karta hai.</p>
+      <p class="concept-why"><strong>Why:</strong> Control ke bina risk manage nahi hota.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Defense in Depth</h4>
+      <p class="concept-meaning">Multiple layers mein security lagana.</p>
+      <p class="concept-why"><strong>Why:</strong> Ek layer fail ho jaye to doosri bacha leti hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Malware</h4>
+      <p class="concept-meaning">Koi bhi harmful software jo nuqsan pohnchata hai.</p>
+      <p class="concept-why"><strong>Why:</strong> Malware sabse common threat hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Human Factors</h4>
+      <p class="concept-meaning">Insaan ki ghaltiyan aur behaviour jo security ko affect karte hain.</p>
+      <p class="concept-why"><strong>Why:</strong> Zyada tar incidents human error se hote hain.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Incident Response</h4>
+      <p class="concept-meaning">Incident ke waqt systematic tareeqe se react karna.</p>
+      <p class="concept-why"><strong>Why:</strong> Sahi response nuqsan kam karta hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Recovery</h4>
+      <p class="concept-meaning">Incident ke baad systems ko wapas normal karna.</p>
+      <p class="concept-why"><strong>Why:</strong> Business continuity ke liye zaroori hai.</p>
+    </div>
+    <div class="concept-card">
+      <h4>Stacked Risk</h4>
+      <p class="concept-meaning">Multiple chhoti weaknesses ka mil kar bara risk banna.</p>
+      <p class="concept-why"><strong>Why:</strong> Chhoti ghaltiyan mil kar bara breach banati hain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAPTERS (1-16) ============ -->
+
+<!-- Chapter 1 -->
+<section id="ch1" class="section chapter" data-chapter="1">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 1</span>
+    <h2>Cybersecurity &amp; Its Origins</h2>
+    <button class="btn complete-btn" data-chapter="1">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Cybersecurity ka basic purpose digital systems, devices aur information ko unauthorized access, damage aur misuse se protect karna hai. Ye chapter aapko batata hai ke cybersecurity kahan se aayi aur kyun aaj ye itni important hai.</p>
+
+  <h3>What You Will Learn</h3>
+  <ul class="clean-list">
+    <li>Cybersecurity ka asaan matlab</li>
+    <li>Digital revolution aur internet ki growth</li>
+    <li>Digital devices aur information ki ahmiyat</li>
+    <li>Cyber threats aur vulnerabilities</li>
+    <li>Attack vectors ka concept</li>
+    <li>Cloud computing aur connected technologies</li>
+    <li>Human involvement in security</li>
+  </ul>
+
+  <h3>Digital Revolution</h3>
+  <p>Pichle 30-40 saalon mein duniya ne aik bara change dekha hai. Pehle log cash use karte the, kaagaz par kaam hota tha, aur information physical form mein hoti thi. Aaj sab kuch digital ho gaya hai — paisa, records, communication, entertainment.</p>
+  <p>Is change ko <strong>Digital Revolution</strong> kehte hain. Lekin is convenience ke saath aik naya masla bhi aaya: agar sab kuch digital hai, to usay protect kaun karega?</p>
+
+  <h3>Digital Devices &amp; Information</h3>
+  <p><strong>Digital Device</strong> wo machine hai jo data ko digital form mein store, process ya transmit karti hai — jaise mobile phone, laptop, tablet, smart TV, ya even smart watch.</p>
+  <p><strong>Digital Information</strong> aapka data hai — photos, messages, bank details, documents, passwords. Ye aaj ke daur ki sabse valuable asset hai.</p>
+
+  <h3>Digital Dependency</h3>
+  <p>Aaj hum digitally dependent hain. Bank, hospital, school, government — sab systems digital hain. Agar ye systems band ho jayein ya compromise ho jayein, to real life bhi ruk jati hai.</p>
+
+  <h3>Cyber Threats &amp; Vulnerabilities</h3>
+  <p><strong>Cyber Threat</strong> koi bhi cheez hai jo aapke system ya data ko nuqsan pohncha sakti hai — jaise hacker, malware, ya even aik careless employee.</p>
+  <p><strong>Vulnerability</strong> system mein aik kamzori hai. Jaise purana software, weak password, ya misconfigured setting. Attackers vulnerabilities dhoondte hain aur unhe use karte hain.</p>
+
+  <h3>Attack Vectors</h3>
+  <p><strong>Attack Vector</strong> wo rasta hai jisse attacker aapke system tak pohnchta hai. Common vectors:</p>
+  <ul class="clean-list">
+    <li>Email (phishing)</li>
+    <li>Websites (malicious downloads)</li>
+    <li>USB drives</li>
+    <li>Weak WiFi networks</li>
+    <li>Third-party vendors</li>
+  </ul>
+
+  <h3>Cloud Computing</h3>
+  <p><strong>Cloud</strong> ka matlab hai ke aapka data aur applications kisi doosre ke server par hain, internet ke through accessible. Cloud ne convenience di hai lekin naye security challenges bhi — jaise data kahan hai, kaun access kar sakta hai, aur kya provider trusted hai.</p>
+
+  <h3>Connected Technologies</h3>
+  <p>Aaj har cheez internet se connected hai — cars, cameras, fridges, medical devices. Isay <strong>IoT (Internet of Things)</strong> kehte hain. Har connected device aik naya potential entry point hai.</p>
+
+  <h3>Human Involvement</h3>
+  <p>Sabse important baat: cybersecurity sirf technology ka masla nahi. Insaan iska hissa hai — kabhi defender ke tor par, kabhi weak link ke tor par. Zyada tar incidents human error se shuru hote hain.</p>
+
+  <div class="callout">
+    <strong>💡 Remember This:</strong> Cybersecurity = Technology + People + Processes. Teenon ko saath dekhna zaroori hai.
+  </div>
+
+  <div class="recap">
+    <h4>Quick Recap</h4>
+    <p>Cybersecurity digital systems ko protect karti hai. Digital dependency barhne ke saath threats bhi barhe hain. Vulnerabilities, attack vectors, cloud aur IoT — sab naye challenges laate hain. Aur insaan is poore system ka center hai.</p>
+  </div>
+</section>
+
+<!-- Chapter 2 -->
+<section id="ch2" class="section chapter" data-chapter="2">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 2</span>
+    <h2>About Cybersecurity Case Studies</h2>
+    <button class="btn complete-btn" data-chapter="2">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Case studies real incidents ki kahaniyan hain. Inhe padh kar hum seekhte hain ke kya ghalat hua, kyun hua, aur kaise rok sakte the.</p>
+
+  <h3>Why Case Studies Matter</h3>
+  <ul class="clean-list">
+    <li>Real incidents se real lessons milte hain</li>
+    <li>Hum dekhte hain ke theory aur practice mein farq kahan hai</li>
+    <li>Multiple factors ko samajhne ka mauqa milta hai</li>
+    <li>Defensive improvements ka pata chalta hai</li>
+  </ul>
+
+  <h3>How To Analyze A Cybersecurity Incident</h3>
+  <p>Kisi bhi incident ko analyze karne ke liye ye steps follow karein:</p>
+  <div class="analyze-flow">
+    <div class="analyze-step"><span>1</span><h4>What Happened</h4><p>Event ka basic timeline samjhein.</p></div>
+    <div class="analyze-step"><span>2</span><h4>Who Was Involved</h4><p>Attackers, victims, third parties.</p></div>
+    <div class="analyze-step"><span>3</span><h4>Security Gaps</h4><p>Kaunsi weaknesses use hui.</p></div>
+    <div class="analyze-step"><span>4</span><h4>Human Factors</h4><p>Insani ghaltiyan kya theen.</p></div>
+    <div class="analyze-step"><span>5</span><h4>Technical Factors</h4><p>Technical controls kyun fail hue.</p></div>
+    <div class="analyze-step"><span>6</span><h4>Lessons Learned</h4><p>Kya seekha aur kya improve karna hai.</p></div>
+  </div>
+
+  <h3>Multiple Contributing Factors</h3>
+  <p>Koi bhi bara incident sirf aik wajah se nahi hota. Aam tor par kai chhoti ghaltiyan mil kar bara masla banati hain. Isay <strong>Stacked Risk</strong> kehte hain.</p>
+
+  <div class="callout"><strong>💡 Remember:</strong> Ek weakness kaafi nahi hoti — lekin kai weaknesses mil kar disaster banati hain.</div>
+</section>
+
+<!-- Chapter 3 -->
+<section id="ch3" class="section chapter case-study" data-chapter="3">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 3 • Case Study</span>
+    <h2>Target 2013</h2>
+    <button class="btn complete-btn" data-chapter="3">Mark as Complete</button>
+  </div>
+
+  <div class="case-badge">Educational Case Study</div>
+  <p class="case-note">Ye case study publicly available information par based hai aur sirf educational / defensive purposes ke liye hai. Kisi bhi tarah ki attack instructions provide nahi ki jaa rahi.</p>
+
+  <h3>Background</h3>
+  <p>2013 mein Target (aik bara American retail chain) ko aik bara data breach face karna para. Millions of customers ke payment card details aur personal information compromise hui.</p>
+
+  <h3>What Happened (High Level)</h3>
+  <p>Attackers ne pehle aik third-party vendor ko compromise kiya jiska Target ke network se connection tha. Us access ke through wo Target ke systems mein ghusse aur payment systems tak pohnche.</p>
+
+  <h3>Key Security Gaps</h3>
+  <ul class="clean-list">
+    <li><strong>Third-Party Risk:</strong> Vendor ke systems kam secure the.</li>
+    <li><strong>Network Segmentation:</strong> Alag alag systems ke darmiyan proper separation nahi thi.</li>
+    <li><strong>Monitoring:</strong> Suspicious activity ka pata waqt par nahi chala.</li>
+    <li><strong>Access Control:</strong> Vendor ke paas zaroorat se zyada access tha.</li>
+  </ul>
+
+  <h3>Human Factors</h3>
+  <p>Vendor ke employees ko phishing emails aaye jinse attacker ne pehla access hasil kiya. Ye dikhata hai ke human error kitna bara risk hai.</p>
+
+  <h3>Technical Factors</h3>
+  <p>Point-of-sale systems mein malware install hua jo card data capture karta tha. Ye malware kai hafton tak detect nahi hua.</p>
+
+  <h3>Consequences</h3>
+  <ul class="clean-list">
+    <li>Millions of customers affected</li>
+    <li>Bara financial loss</li>
+    <li>Reputation damage</li>
+    <li>Legal aur regulatory consequences</li>
+  </ul>
+
+  <h3>Defensive Lessons</h3>
+  <ul class="clean-list">
+    <li>Third-party vendors ko bhi security requirements follow karwani chahiye</li>
+    <li>Network segmentation zaroori hai</li>
+    <li>Continuous monitoring se early detection possible hoti hai</li>
+    <li>Least privilege access dena chahiye</li>
+  </ul>
+
+  <div class="callout"><strong>💡 Lesson:</strong> Aapki security utni hi strong hai jitna aapka sabse weak partner.</div>
+</section>
+
+<!-- Chapter 4 -->
+<section id="ch4" class="section chapter" data-chapter="4">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 4</span>
+    <h2>Disciplines Within Cybersecurity</h2>
+    <button class="btn complete-btn" data-chapter="4">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Cybersecurity aik field nahi — kai disciplines ka group hai. Har discipline ka apna role hota hai.</p>
+
+  <div class="grid grid-3 disciplines">
+    <div class="discipline-card"><h4>🔐 Cybersecurity Management</h4><p>Strategy, policies aur team lead karna.</p><p class="why"><strong>Why:</strong> Bina leadership ke security direction nahi milti.</p></div>
+    <div class="discipline-card"><h4>🏗️ Security Architecture</h4><p>Secure systems ka design banana.</p><p class="why"><strong>Why:</strong> Achha design future problems rokta hai.</p></div>
+    <div class="discipline-card"><h4>🌐 Network Security</h4><p>Networks ko protect karna (firewall, IDS, VPN).</p><p class="why"><strong>Why:</strong> Network har attack ka rasta hota hai.</p></div>
+    <div class="discipline-card"><h4>🔍 Security Analysis</h4><p>Logs aur alerts ko analyze karna.</p><p class="why"><strong>Why:</strong> Analysis se attacks pakre jate hain.</p></div>
+    <div class="discipline-card"><h4>🎯 Penetration Testing</h4><p>Authorized testing se weaknesses dhoondna.</p><p class="why"><strong>Why:</strong> Attack se pehle apni kamzori pata chal jati hai.</p></div>
+    <div class="discipline-card"><h4>🚨 Incident Response</h4><p>Incident ke waqt react karna.</p><p class="why"><strong>Why:</strong> Fast response nuqsan kam karta hai.</p></div>
+    <div class="discipline-card"><h4>⚖️ Risk Management</h4><p>Risk identify aur prioritize karna.</p><p class="why"><strong>Why:</strong> Resources sahi jagah lagane ke liye.</p></div>
+    <div class="discipline-card"><h4>📋 Governance</h4><p>Policies, compliance aur standards.</p><p class="why"><strong>Why:</strong> Legal aur ethical boundaries banati hai.</p></div>
+    <div class="discipline-card"><h4>👁️ Security Monitoring</h4><p>24/7 activities par nazar rakhna.</p><p class="why"><strong>Why:</strong> Early detection hi best defense hai.</p></div>
+    <div class="discipline-card"><h4>🖥️ Security Operations</h4><p>Day-to-day security tasks chalana.</p><p class="why"><strong>Why:</strong> Continuous operations zaroori hai.</p></div>
+    <div class="discipline-card"><h4>🚪 Access Control</h4><p>Kaun kya access kar sakta hai.</p><p class="why"><strong>Why:</strong> Data sirf authorized logon tak pohnche.</p></div>
+    <div class="discipline-card"><h4>⚙️ Security Configuration</h4><p>Systems ko securely configure karna.</p><p class="why"><strong>Why:</strong> Default settings aksar insecure hoti hain.</p></div>
+  </div>
+</section>
+
+<!-- Chapter 5 -->
+<section id="ch5" class="section chapter case-study" data-chapter="5">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 5 • Case Study</span>
+    <h2>Insider Threat: Edward Snowden 2013</h2>
+    <button class="btn complete-btn" data-chapter="5">Mark as Complete</button>
+  </div>
+
+  <div class="case-badge">Insider Threat Education</div>
+  <p class="case-note">Ye section insider threat ke concept ko samjhane ke liye hai. Hum kisi individual par speculation nahi karte.</p>
+
+  <h3>Insider Threat Kya Hai?</h3>
+  <p><strong>Insider Threat</strong> wo risk hai jo organization ke andar kisi trusted person se aata hai — employee, contractor, ya vendor — jo apne access ka galat istemal karta hai.</p>
+
+  <h3>Trusted Access Ka Concept</h3>
+  <p>Insiders ko generally zyada access milta hai kyunki unhe kaam karne ke liye uski zaroorat hoti hai. Ye access agar misuse ho, to bara nuqsan ho sakta hai.</p>
+
+  <h3>Privileged Access</h3>
+  <p>Kuch users ke paas <strong>privileged access</strong> hota hai — matlab wo sensitive systems ya data tak pohnch sakte hain. Is access ko carefully manage karna zaroori hai.</p>
+
+  <h3>Human Factors</h3>
+  <ul class="clean-list">
+    <li>Disgruntled employees</li>
+    <li>Financial pressures</li>
+    <li>Ideological reasons</li>
+    <li>Simple carelessness</li>
+  </ul>
+
+  <h3>Control Weaknesses</h3>
+  <ul class="clean-list">
+    <li>Excessive access without need</li>
+    <li>Weak monitoring of sensitive data</li>
+    <li>No data loss prevention tools</li>
+    <li>Trust without verification</li>
+  </ul>
+
+  <h3>Why Insider Threats Matter</h3>
+  <p>Insider threats sabse mushkil detect karne wale hote hain kyunki:</p>
+  <ul class="clean-list">
+    <li>Wo already andar hain</li>
+    <li>Unka access legitimate lagta hai</li>
+    <li>Unhe systems ka pata hota hai</li>
+  </ul>
+
+  <h3>Defensive Lessons</h3>
+  <ul class="clean-list">
+    <li>Least privilege principle follow karein</li>
+    <li>Sensitive data ka access monitor karein</li>
+    <li>Behavioral analytics use karein</li>
+    <li>Separation of duties lagayein</li>
+    <li>Employee exit process strong karein</li>
+  </ul>
+
+  <div class="callout"><strong>💡 Lesson:</strong> Trust zaroori hai, lekin verification usse bhi zyada.</div>
+</section>
+
+<!-- Chapter 6 -->
+<section id="ch6" class="section chapter" data-chapter="6">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 6</span>
+    <h2>Basic Cybersecurity Concepts</h2>
+    <button class="btn complete-btn" data-chapter="6">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Ye chapter cybersecurity ke core lifecycle ke baare mein hai. Ye 7 concepts har security program ki bunyaad hain.</p>
+
+  <h3>Cybersecurity Lifecycle</h3>
+  <div class="lifecycle">
+    <div class="lifecycle-step" data-phase="identify"><h4>IDENTIFY</h4><p>Kya protect karna hai — assets, data, systems.</p></div>
+    <div class="lifecycle-arrow">↓</div>
+    <div class="lifecycle-step" data-phase="protect"><h4>PROTECT</h4><p>Controls lagana — passwords, encryption, firewalls.</p></div>
+    <div class="lifecycle-arrow">↓</div>
+    <div class="lifecycle-step" data-phase="detect"><h4>DETECT</h4><p>Monitoring — kya kuch ghalat ho raha hai.</p></div>
+    <div class="lifecycle-arrow">↓</div>
+    <div class="lifecycle-step" data-phase="respond"><h4>RESPOND</h4><p>Incident par react karna.</p></div>
+    <div class="lifecycle-arrow">↓</div>
+    <div class="lifecycle-step" data-phase="recover"><h4>RECOVER</h4><p>Systems wapas normal karna.</p></div>
+    <div class="lifecycle-arrow">↓</div>
+    <div class="lifecycle-step" data-phase="refine"><h4>REPEAT &amp; REFINE</h4><p>Seekhna aur improve karna.</p></div>
+  </div>
+
+  <h3>Detailed Explanation</h3>
+  <div class="accordion">
+    <div class="acc-item"><button class="acc-header">1. Identify — Kya Protect Karna Hai?</button><div class="acc-body"><p>Pehla step ye hai ke aap jaanein aapke paas kya assets hain. Kaunse devices, kaunsa data, kaunse systems. Bina identify kiye aap protect nahi kar sakte.</p></div></div>
+    <div class="acc-item"><button class="acc-header">2. Protect — Controls Lagana</button><div class="acc-body"><p>Ab aap safeguards lagate hain — strong passwords, multi-factor authentication, encryption, firewalls, access controls, aur employee training.</p></div></div>
+    <div class="acc-item"><button class="acc-header">3. Detect — Kya Kuch Ghalat Ho Raha Hai?</button><div class="acc-body"><p>Detection ka matlab hai continuous monitoring. Logs, alerts, intrusion detection systems. Agar aap detect nahi karte, to attacker ko free hand milta hai.</p></div></div>
+    <div class="acc-item"><button class="acc-header">4. Respond — Incident Par React</button><div class="acc-body"><p>Jab incident detect ho, to systematic response chahiye — containment, investigation, aur communication.</p></div></div>
+    <div class="acc-item"><button class="acc-header">5. Recover — Wapas Normal</button><div class="acc-body"><p>Systems ko restore karna, data wapas lana, aur business ko chalate rehna. Backups is step mein critical hote hain.</p></div></div>
+    <div class="acc-item"><button class="acc-header">6. Repeat &amp; Refine — Improve Karte Rahna</button><div class="acc-body"><p>Har incident ke baad lessons learned document karein. Controls update karein. Ye cycle chalti rehni chahiye.</p></div></div>
+    <div class="acc-item"><button class="acc-header">7. Defense in Depth — Multiple Layers</button><div class="acc-body"><p>Ek layer kaafi nahi. Multiple layers lagao taake agar ek fail ho, doosri bacha le.</p></div></div>
+  </div>
+
+  <h3>Defense in Depth Visualization</h3>
+  <div class="defense-layers">
+    <div class="layer layer-8"><span>People &amp; Training</span></div>
+    <div class="layer layer-7"><span>Processes &amp; Policies</span></div>
+    <div class="layer layer-6"><span>Physical Security</span></div>
+    <div class="layer layer-5"><span>Access Control</span></div>
+    <div class="layer layer-4"><span>Network Security</span></div>
+    <div class="layer layer-3"><span>Encryption &amp; Data Protection</span></div>
+    <div class="layer layer-2"><span>Monitoring &amp; Detection</span></div>
+    <div class="layer layer-1"><span>Incident Response &amp; Recovery</span></div>
+  </div>
+</section>
+
+<!-- Chapter 7 -->
+<section id="ch7" class="section chapter" data-chapter="7">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 7</span>
+    <h2>Human Factors</h2>
+    <button class="btn complete-btn" data-chapter="7">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Zyada tar cybersecurity incidents insani ghalti se shuru hote hain. Isliye human factors ko samajhna sabse zaroori hai.</p>
+
+  <h3>Human Risk Factors</h3>
+  <div class="grid grid-2">
+    <div class="risk-card"><h4>😴 Carelessness</h4><p>Weak passwords, unpatched systems, suspicious links par click karna.</p></div>
+    <div class="risk-card"><h4>🎣 Social Engineering</h4><p>Insaan ko manipulate karna — phishing, pretexting, baiting.</p></div>
+    <div class="risk-card"><h4>😠 Disgruntled Insiders</h4><p>Naraaz employees jo nuqsan pohncha sakte hain.</p></div>
+    <div class="risk-card"><h4>🤝 Over-Trust</h4><p>Har kisi ko blindly trust karna.</p></div>
+    <div class="risk-card"><h4>📚 Lack of Training</h4><p>Agar employees ko pata nahi to wo ghalti karenge.</p></div>
+    <div class="risk-card"><h4>⏰ Time Pressure</h4><p>Jaldi mein log shortcuts lete hain.</p></div>
+  </div>
+
+  <h3>Social Engineering</h3>
+  <p>Social engineering ka matlab hai insaan ko manipulate karke information ya access hasil karna. Ye technical attack nahi — ye psychological attack hai.</p>
+  <p><strong>Phishing</strong> sabse common form hai — fake email ya message jo aapko link click karne ya credentials dene par majboor karta hai.</p>
+
+  <h3>Security Awareness &amp; Training</h3>
+  <ul class="clean-list">
+    <li>Regular training sessions</li>
+    <li>Phishing simulations</li>
+    <li>Clear policies jo sab samajh sakein</li>
+    <li>Reporting culture — ghalti chupana nahi, batana</li>
+  </ul>
+
+  <h3>Security Culture</h3>
+  <p>Security culture tab banti hai jab har employee samajhta hai ke security uski zimmedari hai, sirf IT department ki nahi.</p>
+
+  <div class="callout"><strong>💡 Remember:</strong> Technology ko hack karna mushkil ho sakta hai, lekin insaan ko hack karna aasan hai. Isliye training zaroori hai.</div>
+</section>
+
+<!-- Chapter 8 -->
+<section id="ch8" class="section chapter" data-chapter="8">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 8</span>
+    <h2>Technical Cybersecurity</h2>
+    <button class="btn complete-btn" data-chapter="8">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Ye chapter technical defensive controls ke baare mein hai. Har control ka purpose, matlab, aur kaunsa risk reduce karta hai.</p>
+
+  <div class="grid grid-2 controls">
+    <div class="control-card">
+      <h4>Access Control</h4>
+      <p><strong>Definition:</strong> Ye decide karna ke kaun kya access kar sakta hai.</p>
+      <p><strong>Purpose:</strong> Sirf authorized users data tak pohnchein.</p>
+      <p><strong>Risk reduced:</strong> Unauthorized access.</p>
+      <p><strong>Example:</strong> File permissions, RBAC.</p>
+    </div>
+    <div class="control-card">
+      <h4>Authentication</h4>
+      <p><strong>Definition:</strong> Verify karna ke aap kaun hain.</p>
+      <p><strong>Purpose:</strong> Confirm identity.</p>
+      <p><strong>Risk reduced:</strong> Account takeover.</p>
+      <p><strong>Example:</strong> Password + MFA.</p>
+    </div>
+    <div class="control-card">
+      <h4>Authorization</h4>
+      <p><strong>Definition:</strong> Decide karna ke authenticated user kya kar sakta hai.</p>
+      <p><strong>Purpose:</strong> Permissions enforce karna.</p>
+      <p><strong>Risk reduced:</strong> Privilege misuse.</p>
+      <p><strong>Example:</strong> Admin vs user roles.</p>
+    </div>
+    <div class="control-card">
+      <h4>Malware Protection</h4>
+      <p><strong>Definition:</strong> Anti-malware software jo harmful programs detect aur remove karta hai.</p>
+      <p><strong>Purpose:</strong> Malware se bachna.</p>
+      <p><strong>Risk reduced:</strong> Virus, ransomware, trojans.</p>
+      <p><strong>Example:</strong> Antivirus with real-time scanning.</p>
+    </div>
+    <div class="control-card">
+      <h4>Secure Configuration</h4>
+      <p><strong>Definition:</strong> Systems ko securely set up karna.</p>
+      <p><strong>Purpose:</strong> Default weaknesses hatana.</p>
+      <p><strong>Risk reduced:</strong> Misconfiguration exploits.</p>
+      <p><strong>Example:</strong> Default passwords change karna.</p>
+    </div>
+    <div class="control-card">
+      <h4>Firewall</h4>
+      <p><strong>Definition:</strong> Network traffic ko filter karne wala tool.</p>
+      <p><strong>Purpose:</strong> Unwanted connections block karna.</p>
+      <p><strong>Risk reduced:</strong> External attacks.</p>
+      <p><strong>Example:</strong> Sirf port 443 allow karna.</p>
+    </div>
+    <div class="control-card">
+      <h4>Intrusion Detection (IDS)</h4>
+      <p><strong>Definition:</strong> Suspicious activity detect karna.</p>
+      <p><strong>Purpose:</strong> Alerts dena.</p>
+      <p><strong>Risk reduced:</strong> Late detection.</p>
+      <p><strong>Example:</strong> Snort alerts.</p>
+    </div>
+    <div class="control-card">
+      <h4>Intrusion Prevention (IPS)</h4>
+      <p><strong>Definition:</strong> Suspicious activity detect karke block karna.</p>
+      <p><strong>Purpose:</strong> Real-time blocking.</p>
+      <p><strong>Risk reduced:</strong> Active attacks.</p>
+      <p><strong>Example:</strong> Auto-block malicious IPs.</p>
+    </div>
+    <div class="control-card">
+      <h4>Encryption</h4>
+      <p><strong>Definition:</strong> Data ko unreadable form mein convert karna.</p>
+      <p><strong>Purpose:</strong> Data confidentiality.</p>
+      <p><strong>Risk reduced:</strong> Data theft impact.</p>
+      <p><strong>Example:</strong> HTTPS, disk encryption.</p>
+    </div>
+    <div class="control-card">
+      <h4>Patch Management</h4>
+      <p><strong>Definition:</strong> Software updates lagana.</p>
+      <p><strong>Purpose:</strong> Known vulnerabilities fix karna.</p>
+      <p><strong>Risk reduced:</strong> Exploit of known bugs.</p>
+      <p><strong>Example:</strong> Monthly Windows updates.</p>
+    </div>
+    <div class="control-card">
+      <h4>Security Monitoring</h4>
+      <p><strong>Definition:</strong> Continuous nazar rakhna systems par.</p>
+      <p><strong>Purpose:</strong> Anomalies detect karna.</p>
+      <p><strong>Risk reduced:</strong> Undetected breaches.</p>
+      <p><strong>Example:</strong> SIEM dashboards.</p>
+    </div>
+    <div class="control-card">
+      <h4>Penetration Testing</h4>
+      <p><strong>Definition:</strong> Authorized simulated attacks.</p>
+      <p><strong>Purpose:</strong> Weaknesses dhoondna.</p>
+      <p><strong>Risk reduced:</strong> Unknown vulnerabilities.</p>
+      <p><strong>Example:</strong> Yearly pen test.</p>
+    </div>
+    <div class="control-card">
+      <h4>Backup &amp; Recovery</h4>
+      <p><strong>Definition:</strong> Data ki copies rakhna aur restore karna.</p>
+      <p><strong>Purpose:</strong> Data loss se bachna.</p>
+      <p><strong>Risk reduced:</strong> Ransomware impact.</p>
+      <p><strong>Example:</strong> 3-2-1 backup rule.</p>
+    </div>
+    <div class="control-card">
+      <h4>Security Architecture</h4>
+      <p><strong>Definition:</strong> Secure system design.</p>
+      <p><strong>Purpose:</strong> Security ko design mein shamil karna.</p>
+      <p><strong>Risk reduced:</strong> Design-level flaws.</p>
+      <p><strong>Example:</strong> Zero trust architecture.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Chapter 9 -->
+<section id="ch9" class="section chapter" data-chapter="9">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 9</span>
+    <h2>Evolving Attack &amp; Defense Methods</h2>
+    <button class="btn complete-btn" data-chapter="9">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Attackers aur defenders dono continuously evolve karte hain. Jab defense strong hoti hai, attackers naye tareeqe dhoondte hain.</p>
+
+  <h3>Attack vs Defense Evolution</h3>
+  <div class="evolution">
+    <div class="evo-row">
+      <div class="evo-attack"><h4>Attack Evolution</h4><p>Simple viruses → Worms → Trojans → Ransomware → APTs → AI-powered attacks</p></div>
+      <div class="evo-arrow">↔</div>
+      <div class="evo-defense"><h4>Defense Evolution</h4><p>Antivirus → Firewalls → IDS/IPS → SIEM → EDR → AI-based detection</p></div>
+    </div>
+  </div>
+
+  <h3>Key Drivers of Change</h3>
+  <ul class="clean-list">
+    <li>New technologies (cloud, IoT, AI)</li>
+    <li>New vulnerabilities</li>
+    <li>New attacker motivations</li>
+    <li>New defensive tools</li>
+    <li>Regulatory requirements</li>
+  </ul>
+
+  <h3>Continuous Improvement</h3>
+  <p>Security ek destination nahi — ek journey hai. Har din naye threats aate hain, isliye:</p>
+  <ul class="clean-list">
+    <li>Regular patching</li>
+    <li>Continuous monitoring</li>
+    <li>Regular training</li>
+    <li>Incident lessons</li>
+    <li>Threat intelligence</li>
+  </ul>
+
+  <div class="callout"><strong>💡 Remember:</strong> Aaj jo secure hai, kal wo vulnerable ho sakta hai.</div>
+</section>
+
+<!-- Chapter 10 -->
+<section id="ch10" class="section chapter case-study" data-chapter="10">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 10 • Case Study</span>
+    <h2>Sony 2014</h2>
+    <button class="btn complete-btn" data-chapter="10">Mark as Complete</button>
+  </div>
+
+  <div class="case-badge">Educational Case Study</div>
+  <p class="case-note">Ye publicly documented incident par based educational discussion hai. Attack instructions provide nahi ki jaa rahi.</p>
+
+  <h3>Background</h3>
+  <p>2014 mein Sony Pictures Entertainment ko aik bara cyber attack face karna para jismein bara data leak hua aur systems disrupted hue.</p>
+
+  <h3>What Happened</h3>
+  <p>Attackers ne Sony ke network mein ghus kar sensitive data steal kiya aur systems ko damage pohnchaya. Bara amount of internal data publicly leak hua.</p>
+
+  <h3>Cybersecurity Weaknesses</h3>
+  <ul class="clean-list">
+    <li>Weak password practices</li>
+    <li>Poor network segmentation</li>
+    <li>Lack of monitoring</li>
+    <li>Inadequate access controls</li>
+  </ul>
+
+  <h3>Human Factors</h3>
+  <p>Social engineering aur weak credentials ne attackers ko entry di. Employees ko bhi proper training nahi thi.</p>
+
+  <h3>Technical Factors</h3>
+  <p>Attackers ne malware use kiya jo systems ko wipe kar sakta tha, aur data exfiltration tools bhi install kiye.</p>
+
+  <h3>Consequences</h3>
+  <ul class="clean-list">
+    <li>Massive data leak (emails, documents, films)</li>
+    <li>Financial loss</li>
+    <li>Reputation damage</li>
+    <li>Operational disruption</li>
+  </ul>
+
+  <h3>Lessons Learned</h3>
+  <ul class="clean-list">
+    <li>Strong passwords aur MFA zaroori hain</li>
+    <li>Network segmentation</li>
+    <li>Continuous monitoring</li>
+    <li>Employee training</li>
+    <li>Incident response plan</li>
+  </ul>
+
+  <div class="callout"><strong>💡 Lesson:</strong> Ek chhoti weakness bhi bara nuqsan kar sakti hai.</div>
+</section>
+
+<!-- Chapter 11 -->
+<section id="ch11" class="section chapter" data-chapter="11">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 11</span>
+    <h2>The Cybersecurity Cold War</h2>
+    <button class="btn complete-btn" data-chapter="11">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Duniya bhar mein different types ke threat actors hain, har aik ki apni motivation hai. Isay "Cyber Cold War" bhi kaha jata hai.</p>
+
+  <h3>Threat Actors</h3>
+  <div class="grid grid-2">
+    <div class="threat-card"><h4>💰 Cybercriminals</h4><p><strong>Motivation:</strong> Financial gain</p><p><strong>Examples:</strong> Ransomware gangs, carding groups</p></div>
+    <div class="threat-card"><h4>📢 Hacktivists</h4><p><strong>Motivation:</strong> Political ya social messages</p><p><strong>Examples:</strong> Anonymous-type groups</p></div>
+    <div class="threat-card"><h4>🏛️ Nation-State Actors</h4><p><strong>Motivation:</strong> Espionage, sabotage, geopolitical</p><p><strong>Examples:</strong> Government-backed groups</p></div>
+    <div class="threat-card"><h4>😠 Insiders</h4><p><strong>Motivation:</strong> Revenge, greed, ideology</p><p><strong>Examples:</strong> Disgruntled employees</p></div>
+    <div class="threat-card"><h4>🎭 Cyber Terrorists</h4><p><strong>Motivation:</strong> Ideological, fear creation</p><p><strong>Examples:</strong> Extremist groups</p></div>
+    <div class="threat-card"><h4>🎮 Script Kiddies</h4><p><strong>Motivation:</strong> Fun, challenge, curiosity</p><p><strong>Examples:</strong> Beginners using ready tools</p></div>
+  </div>
+
+  <h3>Cyber-Terrorism as Concept</h3>
+  <p>Cyber-terrorism ka matlab hai digital attacks jo terror phailane ya political goals achieve karne ke liye kiye jayein. Ye concept aur reality ke darmiyan farq samajhna zaroori hai — har attack terrorism nahi hoti.</p>
+
+  <div class="callout"><strong>💡 Remember:</strong> Threat samajhne se defense plan kar sakte hain.</div>
+</section>
+
+<!-- Chapter 12 -->
+<section id="ch12" class="section chapter" data-chapter="12">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 12</span>
+    <h2>Risk-Based Cybersecurity &amp; Stacked Risk</h2>
+    <button class="btn complete-btn" data-chapter="12">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Risk-based cybersecurity ka matlab hai apne resources un risks par lagana jo sabse zyada matter karte hain.</p>
+
+  <h3>Core Terms</h3>
+  <ul class="clean-list">
+    <li><strong>Risk:</strong> Nuqsan ka chance + impact</li>
+    <li><strong>Threat:</strong> Koi cheez jo nuqsan pohncha sakti hai</li>
+    <li><strong>Vulnerability:</strong> Kamzori jo exploit ho sakti hai</li>
+    <li><strong>Asset:</strong> Jo cheez valuable hai (data, systems)</li>
+    <li><strong>Control:</strong> Safeguard jo risk kam karta hai</li>
+    <li><strong>Attack Vector:</strong> Attack ka rasta</li>
+    <li><strong>Impact:</strong> Agar nuqsan ho to kitna bara</li>
+    <li><strong>Likelihood:</strong> Kitna chance hai ke ho</li>
+    <li><strong>Residual Risk:</strong> Controls ke baad bacha hua risk</li>
+  </ul>
+
+  <h3>Risk Chain</h3>
+  <div class="risk-chain">
+    <div class="chain-item">THREAT</div>
+    <div class="chain-plus">+</div>
+    <div class="chain-item">VULNERABILITY</div>
+    <div class="chain-plus">+</div>
+    <div class="chain-item">WEAK CONTROL</div>
+    <div class="chain-plus">+</div>
+    <div class="chain-item">ADDITIONAL EXPOSURE</div>
+    <div class="chain-equals">=</div>
+    <div class="chain-item highlight">INCREASED RISK</div>
+  </div>
+
+  <h3>Stacked Risk</h3>
+  <p><strong>Stacked Risk</strong> ka matlab hai ke kai chhoti chhoti weaknesses mil kar aik bara risk banati hain. Har weakness akeli manageable hoti hai, lekin mil kar disaster ban sakti hain.</p>
+
+  <h3>Example</h3>
+  <p>Imagine:</p>
+  <ul class="clean-list">
+    <li>Weak password + no MFA + no monitoring = bara breach</li>
+    <li>Unpatched system + no firewall + admin access = easy target</li>
+  </ul>
+
+  <div class="callout"><strong>💡 Remember:</strong> Chhoti ghaltiyan ignore na karein — wo mil kar bari problem ban sakti hain.</div>
+</section>
+
+<!-- Chapter 13 -->
+<section id="ch13" class="section chapter" data-chapter="13">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 13</span>
+    <h2>How Cyber Exposed Are You?</h2>
+    <button class="btn complete-btn" data-chapter="13">Mark as Complete</button>
+  </div>
+
+  <h3>Educational Cybersecurity Self-Check</h3>
+  <p class="disclaimer">⚠️ Ye educational self-check hai, professional security audit nahi. Ye aapko sochne ke liye points deta hai.</p>
+
+  <div class="selfcheck">
+    <div class="check-category">
+      <h4>Accounts</h4>
+      <label><input type="checkbox" data-check="a1"> Main strong, unique passwords use karta/karti hoon</label>
+      <label><input type="checkbox" data-check="a2"> Main multi-factor authentication on karta/karti hoon</label>
+      <label><input type="checkbox" data-check="a3"> Maine recent accounts review kiye hain</label>
+    </div>
+    <div class="check-category">
+      <h4>Devices</h4>
+      <label><input type="checkbox" data-check="d1"> Mere devices updated hain</label>
+      <label><input type="checkbox" data-check="d2"> Device lock/screen lock on hai</label>
+      <label><input type="checkbox" data-check="d3"> Main unknown USB devices use nahi karta</label>
+    </div>
+    <div class="check-category">
+      <h4>Data</h4>
+      <label><input type="checkbox" data-check="da1"> Important data ka backup hai</label>
+      <label><input type="checkbox" data-check="da2"> Sensitive files encrypted hain</label>
+      <label><input type="checkbox" data-check="da3"> Main personal info share karne mein careful hoon</label>
+    </div>
+    <div class="check-category">
+      <h4>Network</h4>
+      <label><input type="checkbox" data-check="n1"> Main public WiFi par sensitive kaam nahi karta</label>
+      <label><input type="checkbox" data-check="n2"> Ghar ka WiFi password strong hai</label>
+      <label><input type="checkbox" data-check="n3"> Router firmware updated hai</label>
+    </div>
+    <div class="check-category">
+      <h4>People &amp; Processes</h4>
+      <label><input type="checkbox" data-check="p1"> Main phishing emails pehchanta/pehchanti hoon</label>
+      <label><input type="checkbox" data-check="p2"> Suspicious activity report karta/karti hoon</label>
+      <label><input type="checkbox" data-check="p3"> Main security training leta/leti rehta hoon</label>
+    </div>
+    <div class="check-category">
+      <h4>Recovery</h4>
+      <label><input type="checkbox" data-check="r1"> Mujhe pata hai incident ke waqt kya karna hai</label>
+      <label><input type="checkbox" data-check="r2"> Mere paas recovery plan hai</label>
+      <label><input type="checkbox" data-check="r3"> Main regularly backup test karta/karti hoon</label>
+    </div>
+  </div>
+
+  <button class="btn primary" id="selfcheckBtn">Show My Results</button>
+  <div id="selfcheckResult" class="result-box" aria-live="polite"></div>
+</section>
+
+<!-- Chapter 14 -->
+<section id="ch14" class="section chapter" data-chapter="14">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 14</span>
+    <h2>What To Do When Things Go Wrong</h2>
+    <button class="btn complete-btn" data-chapter="14">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Incident ke waqt panic nahi karna — systematic respond karna hai. Ye chapter defensive incident response sikhata hai.</p>
+
+  <h3>Incident Response Flow</h3>
+  <div class="ir-flow">
+    <div class="ir-step"><span>1</span><h4>Detect</h4><p>Incident ka pata lagana.</p></div>
+    <div class="ir-step"><span>2</span><h4>Assess</h4><p>Kitna serious hai, kya affected hua.</p></div>
+    <div class="ir-step"><span>3</span><h4>Respond</h4><p>Immediate action lena.</p></div>
+    <div class="ir-step"><span>4</span><h4>Contain</h4><p>Spread rokna.</p></div>
+    <div class="ir-step"><span>5</span><h4>Investigate</h4><p>Kya hua aur kaise hua.</p></div>
+    <div class="ir-step"><span>6</span><h4>Recover</h4><p>Systems wapas normal karna.</p></div>
+    <div class="ir-step"><span>7</span><h4>Learn</h4><p>Lessons document karna.</p></div>
+    <div class="ir-step"><span>8</span><h4>Improve</h4><p>Controls update karna.</p></div>
+  </div>
+
+  <h3>Important Points</h3>
+  <ul class="clean-list">
+    <li>Panic na karein — plan follow karein</li>
+    <li>Communication clear rakhein</li>
+    <li>Evidence preserve karein</li>
+    <li>Legal aur regulatory requirements follow karein</li>
+    <li>Post-incident review zaroor karein</li>
+  </ul>
+</section>
+
+<!-- Chapter 15 -->
+<section id="ch15" class="section chapter" data-chapter="15">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 15</span>
+    <h2>A Glimpse Toward the Future</h2>
+    <button class="btn complete-btn" data-chapter="15">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p class="disclaimer">⚠️ Ye future-oriented educational discussion hai. Ye predictions hain, guaranteed facts nahi.</p>
+
+  <h3>Future Trends</h3>
+  <ul class="clean-list">
+    <li>Increasing digital dependency</li>
+    <li>More connected devices (IoT)</li>
+    <li>Cloud-first infrastructure</li>
+    <li>AI in both attack aur defense</li>
+    <li>Quantum computing challenges</li>
+    <li>Supply chain attacks</li>
+    <li>Privacy regulations tightening</li>
+  </ul>
+
+  <h3>Future Challenges</h3>
+  <ul class="clean-list">
+    <li>Attacker sophistication barhegi</li>
+    <li>Attack surface barhega</li>
+    <li>Skills shortage rahega</li>
+    <li>Regulations aur compliance barhenge</li>
+  </ul>
+
+  <h3>Continuous Improvement</h3>
+  <p>Future mein survive karne ke liye continuous learning, adaptation aur improvement zaroori hai.</p>
+
+  <div class="callout"><strong>💡 Remember:</strong> Future ko predict karna mushkil hai, lekin uske liye tayyar rehna possible hai.</div>
+</section>
+
+<!-- Chapter 16 -->
+<section id="ch16" class="section chapter" data-chapter="16">
+  <div class="chapter-header">
+    <span class="chapter-num">Chapter 16</span>
+    <h2>Bringing It All Together</h2>
+    <button class="btn complete-btn" data-chapter="16">Mark as Complete</button>
+  </div>
+
+  <h3>Overview</h3>
+  <p>Ab tak jo kuch seekha, usay aik master model mein samajhte hain.</p>
+
+  <h3>Cybersecurity Master Model</h3>
+  <div class="master-model">
+    <div class="mm-row">
+      <div class="mm-item">People</div>
+      <div class="mm-item">Processes</div>
+      <div class="mm-item">Technology</div>
+    </div>
+    <div class="mm-arrow">↓</div>
+    <div class="mm-row">
+      <div class="mm-item">Assets</div>
+      <div class="mm-item">Threats</div>
+      <div class="mm-item">Vulnerabilities</div>
+    </div>
+    <div class="mm-arrow">↓</div>
+    <div class="mm-row">
+      <div class="mm-item">Risk</div>
+      <div class="mm-item">Controls</div>
+    </div>
+    <div class="mm-arrow">↓</div>
+    <div class="mm-row">
+      <div class="mm-item">Detection</div>
+      <div class="mm-item">Response</div>
+      <div class="mm-item">Recovery</div>
+    </div>
+    <div class="mm-arrow">↓</div>
+    <div class="mm-row">
+      <div class="mm-item highlight">Continuous Improvement</div>
+    </div>
+  </div>
+
+  <h3>Everything You Should Remember</h3>
+  <ul class="clean-list">
+    <li>Cybersecurity = People + Process + Technology</li>
+    <li>Risk samajhna hi bunyaad hai</li>
+    <li>Multiple layers (Defense in Depth) zaroori hain</li>
+    <li>Humans sabse bara risk aur sabse bara asset hain</li>
+    <li>Monitoring aur detection zaroori hai</li>
+    <li>Incident response plan ready rakhein</li>
+    <li>Recovery ke liye backups essential hain</li>
+    <li>Har incident se seekhein</li>
+    <li>Continuous improvement hi asli security hai</li>
+  </ul>
+</section>
+
+<!-- ============ DICTIONARY ============ -->
+<section id="dictionary" class="section">
+  <h2>📖 Cybersecurity Dictionary</h2>
+  <p>Beginner-friendly cybersecurity terms — asaan Roman English mein explained.</p>
+
+  <div class="dict-controls">
+    <input type="search" id="dictSearch" placeholder="Search a term..." aria-label="Search dictionary" />
+    <div class="az-filter" id="azFilter" role="tablist">
+      <button data-letter="all" class="active">All</button>
+      <button data-letter="a">A</button><button data-letter="b">B</button><button data-letter="c">C</button>
+      <button data-letter="d">D</button><button data-letter="e">E</button><button data-letter="f">F</button>
+      <button data-letter="g">G</button><button data-letter="h">H</button><button data-letter="i">I</button>
+      <button data-letter="j">J</button><button data-letter="k">K</button><button data-letter="l">L</button>
+      <button data-letter="m">M</button><button data-letter="n">N</button><button data-letter="o">O</button>
+      <button data-letter="p">P</button><button data-letter="q">Q</button><button data-letter="r">R</button>
+      <button data-letter="s">S</button><button data-letter="t">T</button><button data-letter="u">U</button>
+      <button data-letter="v">V</button><button data-letter="w">W</button><button data-letter="x">X</button>
+      <button data-letter="y">Y</button><button data-letter="z">Z</button>
+    </div>
+  </div>
+
+  <div class="grid grid-3" id="dictGrid"></div>
+  <p id="dictEmpty" class="empty-state" hidden>Koi term nahi mila. Doosra keyword try karein.</p>
+</section>
+
+<!-- ============ SECURITY CHECKLIST ============ -->
+<section id="checklist" class="section">
+  <h2>✅ Security Checklist</h2>
+  <p>Ye defensive checklist aapki daily security habits improve karne ke liye hai. Aapka progress browser mein save hoga.</p>
+
+  <div class="checklist-grid" id="checklistGrid"></div>
+  <button class="btn ghost" id="resetChecklist">Reset Checklist</button>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz" class="section">
+  <h2>🧠 Cybersecurity Quizzes</h2>
+  <p>Apni learning test karein. Har quiz mein 5 questions hain.</p>
+
+  <div class="quiz-selector" id="quizSelector"></div>
+  <div class="quiz-container" id="quizContainer" hidden>
+    <h3 id="quizTitle"></h3>
+    <div id="quizQuestions"></div>
+    <button class="btn primary" id="submitQuiz">Submit Answers</button>
+    <div id="quizResult" class="result-box" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ BOOKMARKS ============ -->
+<section id="bookmarks" class="section">
+  <h2>🔖 Saved Concepts</h2>
+  <p>Aapne jo concepts bookmark kiye hain, wo yahan show honge.</p>
+  <div id="bookmarksList" class="grid grid-2"></div>
+  <p id="bookmarksEmpty" class="empty-state">Abhi koi concept bookmark nahi kiya gaya.</p>
+</section>
+
+<!-- ============ NOTES ============ -->
+<section id="notes" class="section">
+  <h2>📝 My Notes</h2>
+  <p>Apne personal notes yahan likhein. Ye browser mein save honge.</p>
+
+  <div class="notes-editor">
+    <input type="text" id="noteTitle" placeholder="Note title..." />
+    <textarea id="noteBody" rows="5" placeholder="Apne notes yahan likhein..."></textarea>
+    <button class="btn primary" id="saveNote">Save Note</button>
+    <button class="btn ghost" id="clearNote">Clear</button>
+  </div>
+
+  <div id="notesList" class="grid grid-2"></div>
+  <p id="notesEmpty" class="empty-state">Abhi koi note nahi likha gaya.</p>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <h2>ℹ️ About the Course</h2>
+  <p>Ye ek original educational cybersecurity learning platform hai, jo beginners ke liye Roman English mein design kiya gaya hai.</p>
+  <p><strong>Important:</strong> Ye website kisi bhi published book, author, ya publisher se officially affiliated nahi hai. Ye ek independent educational resource hai jo generic cybersecurity topics ko cover karta hai.</p>
+  <p>Ye platform defensive cybersecurity education par focus karta hai aur kisi bhi tarah ki harmful ya attack-related instructions provide nahi karta.</p>
+
+  <h3>Features</h3>
+  <ul class="clean-list">
+    <li>16 educational chapters</li>
+    <li>Interactive cybersecurity lifecycle</li>
+    <li>Defense-in-depth visualization</li>
+    <li>Risk chain diagram</li>
+    <li>Incident response flow</li>
+    <li>Searchable dictionary</li>
+    <li>Quizzes with scoring</li>
+    <li>Progress tracking (localStorage)</li>
+    <li>Bookmarks &amp; personal notes</li>
+    <li>Security self-check</li>
+  </ul>
+</section>
+
+<!-- ============ PROGRESS DASHBOARD (STICKY) ============ -->
+<div class="progress-widget" id="progressWidget" aria-live="polite">
+  <div class="pw-label">Progress</div>
+  <div class="pw-bar"><div class="pw-fill" id="progressFill"></div></div>
+  <div class="pw-stats"><span id="progressPercent">0%</span> • <span id="progressCount">0/16</span></div>
+</div>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-content">
+    <div>
+      <h4>CyberLearn — Cybersecurity Learning Platform</h4>
+      <p>Educational cybersecurity resource for beginners in Roman English.</p>
+    </div>
+    <div>
+      <h4>Disclaimer</h4>
+      <p>This is an independent educational website. Not officially affiliated with any author or publisher. All content is original and for defensive learning only.</p>
+    </div>
+    <div>
+      <h4>Credit</h4>
+      <p>Designed &amp; Developed by <strong>AHAD ALI NISAR</strong></p>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> CyberLearn • Educational Use Only</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
